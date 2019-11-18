@@ -1,0 +1,87 @@
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download music from vk</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    <style>
+        @media (min-width: 992px) {
+            #description {
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="firstScreen" class="d-none">
+            <div class="row">
+                <div class="col-4" style="display: block; width: 100%; margin: 50px auto;">
+                    <img src="https://media.tenor.com/images/47b81948be5023555549c01d88ae3289/tenor.gif" >
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <form method="post">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Логин от вк</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите логин">
+                        <small id="emailHelp" class="form-text text-muted">Мы гарантируем, что ваши данные останутся в сохранности</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputId">id вашей страницы вк</label>
+                        <input type="text" class="form-control" id="exampleInputId" aria-describedby="emailHelp" placeholder="Введите id">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Пароль от вк</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Войти</button>
+                    </form>
+                </div>
+                <div id="description" class="col-6">
+                    <h1>Как это работает?</h1>
+                    <p>
+                        При помощи языка программирования Python и внешней библиотеки для работы с API VK под названием vk_api
+                        программа запрашивает у вас доступ к вашим персональным данным, которые в ходе работы хэшируются,
+                        благодаря чему ни один человек не может получить к ним доступ. <br>После нажатия вами на кнопку
+                        <span class="btn btn-primary" style="cursor: default">Войти</span> программа авторизуется за вас и получает доступ ко всем
+                        ауидозаписям. <br>После этого шага вы можете выборочно скачать интересующую вас аудиозапись, либо
+                        воспользоваться кнопкой <span class="btn btn-primary" style="cursor: default">Скачать все аудиозаписи</span> и таким
+                        образом скачать все аудиофайлы на свой диск.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="secondScreen" class="">
+
+
+            <div class="row align-items-center">
+                <div id="userData" class="col-6">
+                    <h2>
+                        Дядя Петя
+                    </h2>
+                </div>
+                <div id="audioList" class="col-6">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row position-fixed">
+            <div class="col fixed-bottom">
+                <p class="text-center">@ Papashanskiy</p>
+                <p class="text-center">git: <a href="https://github.com/Papashanskiy">https://github.com/Papashanskiy</a></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
