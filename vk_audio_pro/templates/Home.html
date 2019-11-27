@@ -8,6 +8,30 @@
     {% bootstrap_css %}
     {% bootstrap_javascript jquery='full' %}
     <style>
+        li {
+            list-style-type: none;
+            margin-top: 15px;
+        }
+        img {
+            margin: 0 15px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .getall {
+            margin-top: 30px;
+        }
+        .track {
+            padding: 20px;
+        }
+        .track:hower {
+            background-color: #EFEFEF;
+        }
+        #audiolist {
+            overflow: scroll;
+            height: 60vh;
+        }
         @media (min-width: 992px) {
             #description {
 
@@ -62,21 +86,94 @@
 
         <div id="secondScreen" class="">
 
-
-            <div class="row align-items-center">
+            <h2 style="margin-top: 50px">
+                Ваши аудио
+            </h2>
+            <div class="row ">
                 <div id="userData" class="col-6">
-                    <h2>
-                        Дядя Петя
-                    </h2>
+                    <a class="getall btn btn-warning">Скачать все</a>
                 </div>
-                <div id="audioList" class="col-6">
+                <div id="audioList" class="col-6" style="margin-bottom: 100px;">
+                    <ul>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="track btn btn-light">
+                                <img src="https://img.icons8.com/color/30/000000/audio-wave2.png">
+                                <span>Artist name</span> &mdash; Track name
+                                <img src="https://img.icons8.com/clouds/50/000000/download.png">
+                            </a>
+                        </li>
 
+
+                    </ul>
                 </div>
             </div>
         </div>
 
         <div class="row position-fixed">
-            <div class="col fixed-bottom">
+            <div class="col fixed-bottom" style="background-color: white;">
                 <p class="text-center">@ Papashanskiy</p>
                 <p class="text-center">git: <a href="https://github.com/Papashanskiy">https://github.com/Papashanskiy</a></p>
             </div>
